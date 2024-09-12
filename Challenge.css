@@ -1,0 +1,198 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, h4, h5, h6, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navbar styling */
+.navbar {
+    padding: 10px 20px;
+    text-align: left;
+}
+
+.navbar .brand img {
+    max-height: 50px;
+}
+
+/* Banner styling */
+.home-banner {
+    text-align: center;
+}
+
+.home-banner .banner img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+/* Title styling */
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.first-title {
+    margin-bottom: 10px;
+}
+
+
+.first-title .title {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.sub-title {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Button styling */
+.button {
+    margin: 20px 0;
+}
+
+.button-ajukan {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.button-ajukan:hover {
+    background-color: #0056b3;
+}
+
+/* Promo container styling */
+.container-promo {
+    background-color: white;
+    padding: 20px;
+}
+
+.promo-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.promo-title .second-title {
+    font-size: 2em;
+    color: #007BFF;
+}
+
+.promo-1, .promo-2, .promo-3 {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.promo-1 .promo-image, .promo-2 .promo-image, .promo-3 .promo-image {
+    flex: 1;
+}
+
+.promo-1 .promo-image img, .promo-2 .promo-image img, .promo-3 .promo-image img {
+    width: 75%;
+    height: auto;
+    border-radius: 5px;
+    padding-left: 55px;
+}
+
+.detail-promo {
+    flex: 2;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.detail-promo .pt {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.detail-promo .pd {
+    font-size: 1em;
+    color: #777;
+}
+
+.detail-promo .pl {
+    font-size: 1em;
+    color: #007BFF;
+}
+
+.button-promosi {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.button-promosi a {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+a{
+    text-decoration: none;
+}
+
+.button-promosi a:hover {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #0056b3;
+    color: white;
+    text-decoration: underline;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.container-flex{
+    display: flex;
+    margin: 10px 10px 10x 10px;
+    text-decoration: none;
+}
+
+.pd, .pl, .pt{
+    text-align: center;
+}
+
+.container-button-title{
+    text-align: center;
+}
+
+.container-artikel .isi-artikel{
+    display: flex;
+}
+
+.artikel-text{
+    text-align: center;
+}
+
+.container-artikel {
+    background-color: white;
+    padding: 20px;
+}
+
+@media (max-width:480px) {
+    .container-artikel .isi-artikel{
+        display: block;
+    }
+    .container-flex{
+        display: block;
+        margin: 10px 10px 10x 10px;
+        text-decoration: none;
+    }
+}
