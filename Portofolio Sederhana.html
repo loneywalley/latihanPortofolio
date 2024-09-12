@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #004C99; /* Blue accent */
+        }
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        .header {
+            background-color: #990000; /* Red accent */
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+        .header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .section-title {
+            color: #004C99;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .btn-custom {
+            background-color: #990000;
+            color: white;
+        }
+        footer {
+            background-color: #004C99;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="header">
+        <img src="https://media.licdn.com/dms/image/v2/C4E03AQGnr26VtGjaYw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1616757779656?e=1731542400&v=beta&t=RYqI-7uBgVgau2fjqEmOreV1jk5P8WtqzeM2XuM2LaA" alt="Profile Photo">
+        <h1>I Dewa Gede Ngurah Bramasta Darmawan</h1>
+        <p>IT Enthusiasm || Developer || Data Analyst</p>
+        <a href="#contact" class="btn btn-custom">Contact Me</a>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container mt-5">
+        <h2 class="section-title">About Me</h2>
+        <p style="text-align: center;">Hello! <br>I'm Bramasta, I specialize and enthusiasm e in HTML, CSS, JavaScript, Java, SQL, Data Mining and Data Analyst.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container mt-5">
+        <h2 class="section-title">My Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://media.licdn.com/dms/image/v2/C4E0BAQG-FO7nOawetA/company-logo_200_200/company-logo_200_200/0/1631327995686?e=1733961600&v=beta&t=mZB6IBpI4LQQLkc6kYBtj8Zapend84E4wsTd6P6VZt8" class="card-img-top" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">Make Visualization Data For Faculty Acreditation</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="data:image/png;base64,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" 
+                    class="card-img-top" alt="Project 2" style="height: 407px; width: 407px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">Make Analyst using J48 Algorithm</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://media.licdn.com/dms/image/v2/C4E0BAQG-FO7nOawetA/company-logo_200_200/company-logo_200_200/0/1631327995686?e=1733961600&v=beta&t=mZB6IBpI4LQQLkc6kYBtj8Zapend84E4wsTd6P6VZt8" class="card-img-top" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">Make Library Management Website</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mt-5">
+        <h2 class="section-title">Contact Me</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="e.g. John Doe">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="e.g. johndoe@xxxxxx.com">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="e.g. I Love You"></textarea>
+            </div>
+            <button type="submit" class="btn btn-custom">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 I Dewa Gede Ngurah Bramasta Darmawan. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
