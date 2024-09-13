@@ -3,59 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Simple Calculator</title>
     <link rel="stylesheet" href="./Day2.css">
 </head>
 <body>
-
-    <header>
-        <nav>
-            <h1><a href="#">My Portfolio</a></h1>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="hero">
-        <h2>Hello, I'm <span class="highlight">Your Name</span></h2>
-        <p>Web Developer | Designer | Creator</p>
-        <a href="#contact" class="btn">Get In Touch</a>
-    </section>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a passionate web developer with a love for creating beautiful and functional websites. I have a strong background in both frontend and backend development, and enjoy solving complex problems with clean and efficient code.</p>
-    </section>
-
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project-card">
-            <h3>Project 1</h3>
-            <p>Description of project 1.</p>
+    <div class="calculator">
+        <input type="text" id="result" disabled>
+        <div class="buttons">
+            <button onclick="clearScreen()">C</button>
+            <button onclick="display('/')">/</button>
+            <button onclick="display('*')">*</button>
+            <button onclick="del()">DEL</button>
+            <button onclick="display('7')">7</button>
+            <button onclick="display('8')">8</button>
+            <button onclick="display('9')">9</button>
+            <button onclick="display('-')">-</button>
+            <button onclick="display('4')">4</button>
+            <button onclick="display('5')">5</button>
+            <button onclick="display('6')">6</button>
+            <button onclick="display('+')">+</button>
+            <button onclick="display('1')">1</button>
+            <button onclick="display('2')">2</button>
+            <button onclick="display('3')">3</button>
+            <button onclick="calculate()">=</button>
+            <button onclick="display('0')" class="zero">0</button>
         </div>
-        <div class="project-card">
-            <h3>Project 2</h3>
-            <p>Description of project 2.</p>
-        </div>
-        <div class="project-card">
-            <h3>Project 3</h3>
-            <p>Description of project 3.</p>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-        <p>Phone: <a href="tel:+123456789">+123 456 789</a></p>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Your Name. All Rights Reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
+    </div>
+    <script src="./Day2.js"></script>
 </body>
 </html>
